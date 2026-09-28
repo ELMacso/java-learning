@@ -113,5 +113,91 @@ public class Main {
         int examNumber = 3;
         String examGrade = examNumber == 1 ? "You failed..." : "You passed!";
         System.out.println(examGrade);
+
+        System.out.println("\n");
+
+        // tasks
+
+        // Create 3 variable.
+        // How much do all the apples cost?
+        // How much do an apple and a pear cost?
+        // How much do all the apples cost + 3?
+        int applePrice = 35;
+        int pearPrice = 42;
+        int appleCount = 4;
+
+        int allApple = applePrice * appleCount;
+        int anAppleAPear = applePrice + pearPrice;
+        int appleAdditionThree = applePrice * (appleCount + 3);
+
+        System.out.println("The all apple price = " + allApple + "\n" +
+                "An apple and a pear price = " + anAppleAPear + "\n" +
+                "All apple addition three price = " + appleAdditionThree);
+
+        // Determine whether the number is even or odd.
+        int number = 37;
+        boolean trueOrFalse = (number % 2) == 0;
+        System.out.println("\nThe number is even: " + trueOrFalse);
+
+        // Determine based on age whether the person is an adult and has a drink.
+        int age2 = 25;
+        boolean addult2 = age2 >= 18;
+        int drink = 1;
+        boolean canDrink = addult2 && drink >= 1;
+
+        System.out.println("\nThe person is an adult: " + addult2 + "\n" +
+                "If your are adult, do you have a drink: " + canDrink);
+
+        // Which is the larger number?
+        int num1 = 87;
+        int num2 = 54;
+        int num3 = 95;
+        int larger3 = (num1 > num2) ? num1 : num2;
+        int larger4 = (larger3 > num3) ? larger3 : num3;
+
+        System.out.println("\nThe greater of the two numbers = " + larger3 + "\n" +
+                "The greater of the three numbers = " + larger4);
+
+        // Logic combination
+        boolean isWeekend = true;
+        boolean hasFreeTime = false;
+        boolean hasTraining = true;
+
+        boolean canTrain = (isWeekend && hasFreeTime) || hasTraining;
+
+        System.out.println("\nIs able to train: " + canTrain);
+
+        // Cinema
+        double ticketPrice = 8.50;
+        int ticket = 3;
+        double popcornPrice = 4.20;
+        int popcorn = 2;
+
+        double allTicketPrice = ticketPrice * ticket;
+        double allPopcornPrice = popcornPrice * popcorn;
+        double allCost = allTicketPrice + allPopcornPrice;
+
+        System.out.println("\nThe all ticket price = " + allTicketPrice + "\n" +
+                "The all popcorn price = " + allPopcornPrice + "\n" +
+                "All cost = " + allCost);
+
+        // Thinking
+        int numb = 24;
+        boolean numbIsLarger10 = numb > 10;
+        boolean numbIsLess50 = numb < 50;
+        boolean numbIsEven = numb % 2 == 0;
+        boolean numbIsDiv3 = numb % 3 == 0;
+        boolean numb10Between50 = numbIsLarger10 && numbIsLess50;
+        boolean numbIsEvenAnd10Between50 = numb10Between50 && numbIsEven;
+
+        System.out.println("\nThe number is greater then 10: " + numbIsLarger10 + "\n" +
+                "The number is less then 50: " + numbIsLess50 + "\n" +
+                "The number is even: " + numbIsEven + "\n" +
+                "The number is divisible by 3: " + numbIsDiv3 + "\n" +
+                "The number is between 10 and 50: " + numb10Between50 + "\n" +
+                "The number is between 10 and 50 and even: " + numbIsEvenAnd10Between50);
+
+
+
     }
 }
